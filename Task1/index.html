@@ -2,25 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Interactive Navigation Menu</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header id="navbar">
+    <div class="nav-container">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+  <div class="hero-content">
+    <h1 class="fade-in">Welcome to Mooi</h1>
+    <p class="slide-up">We craft stunning digital experiences that inspire and convert.</p>
+    <a href="#contact" class="cta-button bounce">Get in Touch</a>
+  </div>
+</section>
 
 
-  <section id="home"><h2>Home Section</h2></section>
-  <section id="services"><h2>Services Section</h2></section>
-  <section id="about"><h2>About Section</h2></section>
-  <section id="contact"><h2>Contact Section</h2></section>
+
+
+<section id="about" class="section about">
+  <h2>About Us</h2>
+  <div class="about-container">
+    <img src="https://st2.depositphotos.com/3591429/5997/i/450/depositphotos_59977499-stock-photo-hands-holding-word-about-us.jpg" alt="About Image" class="about-image" />
+    <div class="about-text">
+      <p>
+        We are a creative digital agency passionate about design and technology. Our mission is to craft stunning websites and user experiences that stand out in the digital world.
+      </p>
+      <p>
+        Our team of designers and developers work together to deliver results that exceed expectations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-box">
+      <img src="https://sitegalleria.com/wp-content/uploads/2020/08/web-design-development_0.png" alt="Web Design" />
+      <h3>Web Design</h3>
+      <p>Modern, responsive websites designed for speed and user experience.</p>
+    </div>
+    <div class="service-box">
+      <img src="https://www.graygraph.com/wp-content/uploads/2022/01/software-development-lifecycle-1024x682-1.jpg" alt="Development" />
+      <h3>Development</h3>
+      <p>Custom solutions with clean, scalable code using latest tech stacks.</p>
+    </div>
+    <div class="service-box">
+      <img src="https://pimt.in/wp-content/uploads/2017/05/SEO-PNG-Images-1-1-1-1.png" alt="SEO" />
+      <h3>SEO</h3>
+      <p>Improve visibility on search engines with our smart SEO strategies.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Fill out the form below and we’ll get in touch.</p>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
 
   <script src="script.js"></script>
 </body>
